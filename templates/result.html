@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Similarity Result</title>
+</head>
+<body>
+    <h1>Similarity Result</h1>
+    {% if result_texts %}
+        {% for result_text in result_texts %}
+            <p>{{ result_text }}</p>
+        {% endfor %}
+    {% else %}
+        <p>No similarity result available.</p>
+    {% endif %}
+</body>
+</html>
